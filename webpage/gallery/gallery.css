@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-gallery {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(242 241 247);
+  margin: 20px 0 0 0;
+  text-shadow: 3px 4px #481616;
+  font-family: "Carter One", cursive;
+}
+
+/* NOTE IMAGE SHOULD BE OF SIZE 800 x 600 */
+
+.slider {
+  width: 800px; /*width*/
+  position: relative;
+  padding: 630px 0 20px 0; /*padding top: width + 30*/
+  margin: 20px auto 15px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Last thing remaining is to add transitions*/
+.slider > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="slide_switch"] {
+  display: none;
+}
+
+.slider label {
+  margin: 0px 5px 10px 5px;
+  height: 75px; /*small preview image width*/
+  border: 3px solid grey;
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.4;
+}
+
+/*add the click effects*/
+.slider input[name="slide_switch"]:checked + label {
+  border-color: rgb(231, 235, 238);
+  opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*work on the main images*/
+.slider input[name="slide_switch"] ~ img {
+  opacity: 0;
+  transform: scale(0.8);
+  width: 800px;
+}
+/*That hides all main images at a 80% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name="slide_switch"]:checked + label + p + img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* TEXT in image */
+.slider input[name="slide_switch"] + label + p {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background: #e6f4ee;
+  z-index: 1;
+  padding: 4px 45px;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+.slider input[name="slide_switch"]:checked + label + p {
+  transition: 3s;
+  opacity: 1;
+}
+
+.yt-video {
+  display: block;
+  margin: auto;
+}
+.yt-title {
+  text-align: center;
+  margin: 0;
+  color: white;
+  padding: 10px 0 20px 0;
+  text-shadow: 1px 1px black;
+  font-size: 25px;
+}
+
+@media (max-width: 950px) {
+  .slider {
+    padding-top: 72vw;
+    width: 100%;
+  }
+  .slider input[name="slide_switch"] ~ img {
+    width: 100%;
+  }
+  .header-gallery {
+    font-size: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .slider input[name="slide_switch"] + label + p {
+    font-size: 16px;
+    padding: 3px 30px;
+    top: 0px;
+  }
+  .yt-video {
+    width: 400px;
+    height: 226px;
+  }
+  .yt-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 490px) {
+  .yt-video {
+    width: 330px;
+    height: 186px;
+  }
+  .yt-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 392px) {
+  .slider label {
+    width: 80px;
+    height: 60px;
+  }
+  label img {
+    width: 80px;
+  }
+  .slider input[name="slide_switch"] + label + p {
+    font-size: 12px;
+    padding: 2px 20px;
+  }
+  .yt-video {
+    width: 90%;
+    height: auto;
+  }
+  .yt-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 332px) {
+  .slider input[name="slide_switch"] + label + p {
+    font-size: 8px;
+    padding: 2px 10px;
+  }
+  .slider label {
+    width: 60px;
+    height: 45px;
+  }
+  label img {
+    width: 60px;
+  }
+}

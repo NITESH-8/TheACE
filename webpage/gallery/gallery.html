@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ---------------------------- social icons ----------------------------- -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+    integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous" />
+
+  <!-- -------------------------------- fonts -------------------------------- -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <!--navbar-->
+  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/dp/favicon.ico" type="image/x-icon" />
+
+  <!-- -------------------------------- title -------------------------------- -->
+  <title>gallery</title>
+
+  <!-- ------------------------------- our css ------------------------------- -->
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+  <!-- <link rel="stylesheet" href="social-style.css" /> -->
+</head>
+
+<body>
+  <div class="outer-container">
+    <div class="outer">
+      <nav>
+        <div class="NavLogo"></div>
+        <div class="hamburger-menu">&#9776;</div>
+        <ul class="nav-buttons">
+          <a href="../../index.html">
+            <li class="b btn-5">Home</li>
+          </a>
+          <a href="../about/about.html">
+            <li class="b btn-5">About</li>
+          </a>
+          <a href="../member/member.html">
+            <li class="b btn-5">Members</li>
+          </a>
+          <a href="gallery.html">
+            <li class="b btn-5">Gallery</li>
+          </a>
+          <a href="../contact/contact.html">
+            <li class="b btn-5">Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <div class="header-gallery">
+        <p class="header-member-text">GALLERY</p>
+      </div>
+      <!--
+We will make a slider with stylized thumbnails using CSS3
+The markup is very simple:
+Radio Inputs
+Labels with thumbnails to detect click event
+Main Image
+-->
+      <div class="slider">
+
+        <!--1 image-->
+        <input type="radio" name="slide_switch" id="id1" />
+        <label for="id1">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_pad,w_800/v1621054262/ansuya.jpg" width="100" />
+        </label>
+        <p>Ansuya</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_pad,w_800/v1621054262/ansuya.jpg" />
+
+        <!--2 image-->
+        <input type="radio" name="slide_switch" id="id2" checked="checked" />
+        <label for="id2">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1621548141/madhmaheshwar.jpg"
+            width="100" />
+        </label>
+        <p>Madhmaheshwar</p>
+        <img
+          src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1621548141/madhmaheshwar.jpg" />
+
+        <!--3 image-->
+        <input type="radio" name="slide_switch" id="id3" />
+        <label for="id3">
+          <img
+            src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1628763878/Rudra_22_x5gxyo.jpg"
+            width="100" />
+        </label>
+        <p>Rudranath 2.0</p>
+        <img
+          src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1628763878/Rudra_22_x5gxyo.jpg" />
+
+        <!--4 image-->
+        <input type="radio" name="slide_switch" id="id4" />
+        <label for="id4">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_pad,w_800/v1621549157/meerat.jpg" width="100" />
+        </label>
+        <p>Way to Delhi</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_pad,w_800/v1621549157/meerat.jpg" />
+
+        <!--5 image-->
+        <input type="radio" name="slide_switch" id="id5" />
+        <label for="id5">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1621548299/college.jpg"
+            width="100" />
+        </label>
+        <p>College</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1621548299/college.jpg" />
+
+        <!--6 image-->
+        <input type="radio" name="slide_switch" id="id6" />
+        <label for="id6">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621548288/doon.jpg" width="100" />
+        </label>
+        <p>Dehradun</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621548288/doon.jpg" />
+
+        <!--7 image-->
+        <input type="radio" name="slide_switch" id="id7" />
+        <label for="id7">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1628763329/Rudra_20_ybddp4.jpg"
+            width="100" />
+        </label>
+        <p>Rudranath 2.0</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1628763329/Rudra_20_ybddp4.jpg" />
+
+        <!--8 image-->
+        <input type="radio" name="slide_switch" id="id8" />
+        <label for="id8">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621549722/karthikswami.jpg"
+            width="100" />
+        </label>
+        <p>Karthikswami</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621549722/karthikswami.jpg" />
+
+        <!--9 image-->
+        <input type="radio" name="slide_switch" id="id9" />
+        <label for="id9">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621550997/madhmaheshwar3.jpg"
+            width="100" />
+        </label>
+        <p>Madhmaheshwar</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621550997/madhmaheshwar3.jpg" />
+
+        <!--10 image-->
+        <input type="radio" name="slide_switch" id="id10" />
+        <label for="id10">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621550885/rudranath.jpg"
+            width="100" />
+        </label>
+        <p>Rudranath 1.0</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621550885/rudranath.jpg" />
+
+        <!--11 image-->
+        <input type="radio" name="slide_switch" id="id11" />
+        <label for="id11">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1623617526/Csgo.jpg"
+            width="100" />
+        </label>
+        <p>White House</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1623617526/Csgo.jpg" />
+
+        <!--12 image-->
+        <input type="radio" name="slide_switch" id="id12" />
+        <label for="id12">
+          <img
+            src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1628763537/Rudra_21_buncqp.jpg"
+            width="100" />
+        </label>
+        <p>Rudranath 2.0</p>
+        <img
+          src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1628763537/Rudra_21_buncqp.jpg" />
+
+        <!--13 image-->
+        <input type="radio" name="slide_switch" id="id13" />
+        <label for="id13">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_pad,w_800/v1621550176/tungnath2.jpg"
+            width="100" />
+        </label>
+        <p>Tungnath</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_pad,w_800/v1621550176/tungnath2.jpg" />
+
+        <!--14 image-->
+        <input type="radio" name="slide_switch" id="id14" />
+        <label for="id14">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621550998/madhmaheshwar2.jpg"
+            width="100" />
+        </label>
+        <p>Madhmaheshwar</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_scale,w_800/v1621550998/madhmaheshwar2.jpg" />
+
+        <!--15 image-->
+        <input type="radio" name="slide_switch" id="id15" />
+        <label for="id15">
+          <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1621548401/gopeshwar.jpg"
+            width="100" />
+        </label>
+        <p>Gopeshwar</p>
+        <img src="https://res.cloudinary.com/dmb1tvdqz/image/upload/c_lfill,h_600,w_800/v1621548401/gopeshwar.jpg" />
+
+
+      </div>
+      <div>
+
+        <iframe class="yt-video" width="560" height="315" src="https://www.youtube.com/embed/yTZY_lPkgl4"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <h3 class="yt-title">Rudranath Vlog</h3>
+      </div>
+
+      <!-- We will use PrefixFree - a script that takes care of CSS3 vendor prefixes
+You can download it from http://leaverou.github.com/prefixfree/ -->
+      <!-- <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script> -->
+
+    </div>
+    <footer>&#x000A9; TheACE , 2021</footer>
+</body>
+<script src="gallery.js"></script>
+
+</html>
